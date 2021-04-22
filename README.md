@@ -1,8 +1,16 @@
 # Practical AI Hub
 
 ## Tips, Tricks and Hacks for your AI Research, and R&D Projects
-
 <br>
+
+## Literature Survey
+
+### Experimentation with Code
+
+- [Papers with code] is probably the best resource on the internet for finding the SOTA papers that have code available with them
+- You might also want to check out the [associated github repositories]
+- Arxiv also has a [code tab] where you can found the source code used in the experiments of the corresponding if the author has made it public
+- This is the one I've used the least but might just help you so check out [catalyzeX]
 
 ## Free/Cheap GPU Environments
 
@@ -26,6 +34,14 @@ One of the roadblocks to trying out all the SOTA and other past works of a DL do
 
 - **Using GPU inside Docker:**
 Check out [this tutorial on CUDA docker] or [this detailed blog] or if you're familiar with docker then go to the [Nvidia CUDA's dockerhub page.]
+
+
+
+
+[Papers with code]: https://paperswithcode.com/
+[associated github repositories]: https://github.com/paperswithcode
+[code tab]: https://blog.arxiv.org/2020/10/08/new-arxivlabs-feature-provides-instant-access-to-code/
+[catalyzeX]: https://www.catalyzex.com/
 
 [Google Colab]: https://colab.research.google.com/
 [tensorflow with GPU notebook]: https://colab.research.google.com/notebooks/gpu.ipynb
