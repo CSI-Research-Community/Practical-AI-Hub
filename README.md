@@ -30,11 +30,23 @@
 - **Installing and using Multiple CUDA versions on one system:**
 One of the roadblocks to trying out all the SOTA and other past works of a DL domain is the differences in their requirement of Nvidia's CUDA library. Most modern Deep Learning applications and code bases can require CUDA versions ranging from 8.0 to whatever the latest one is. Now, probably the best solution to this is using docker containers with specifically made base image (more on this below). But for people looking for another solution (I use this often when I want to quickly test out some code and sometimes even for big projects) [this blog might be what you are looking for.]
 
-<br>
-
 - **Using GPU inside Docker:**
 Check out [this tutorial on CUDA docker] or [this detailed blog] or if you're familiar with docker then go to the [Nvidia CUDA's dockerhub page.]
 
+
+## Random Tips
+
+- When working with multiple environments in the same system (python specific):
+    - Make sure you have disabled the other environments to avoid package version clashes
+    - If there are still clashes then try to use commands that specify the environment or directory
+        - For example, for installing packages to the environment you are currently in and not affecting anything outside you can use something like
+            ```sh
+                python -m pip ...
+            ```
+        - Or when working with Anaconda or Virtual Env if you cannot import packages from that venv then you can try something like
+            ```sh
+                <path-to-venv>/bin/python [what you want to execute]
+            ```
 
 
 
