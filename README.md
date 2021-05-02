@@ -48,6 +48,9 @@ Check out [this tutorial on CUDA docker] or [this detailed blog] or if you're fa
                 <path-to-venv>/bin/python [what you want to execute]
             ```
 
+### Suspiciously Specific :thinking:
+
+- If you are having problems installing something (especially Deep Learning tools and frameworks) then sometimes just trying the different methods for installation can work for some reason
 
 
 [Papers with code]: https://paperswithcode.com/
