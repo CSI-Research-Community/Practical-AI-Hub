@@ -52,6 +52,12 @@ Check out [this tutorial on CUDA docker] or [this detailed blog] or if you're fa
 
 - If you are having problems installing something (especially Deep Learning tools and frameworks) then sometimes just trying the different methods for installation can work for some reason
 
+- Always go for the .deb file and avoid .run files if you're using ubuntu
+
+- It is always a good idea NOT to use the '-y' flag and instead check everything that will be modified during an installation
+
+- Sometimes you just have to install all the dependencies manually (or write a script full of try-catches and if-elses) when you have conflicts with previous installations or other packages
+
 
 [Papers with code]: https://paperswithcode.com/
 [associated github repositories]: https://github.com/paperswithcode
