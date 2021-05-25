@@ -1,6 +1,7 @@
 # Practical AI Hub
 
 ## Tips, Tricks and Hacks for your AI Research, and R&D Projects
+
 <br>
 
 ## Literature Survey
@@ -33,20 +34,33 @@ One of the roadblocks to trying out all the SOTA and other past works of a DL do
 - **Using GPU inside Docker:**
 Check out [this tutorial on CUDA docker] or [this detailed blog] or if you're familiar with docker then go to the [Nvidia CUDA's dockerhub page.]
 
+## Referencing
+
+- ipynb notebooks in github: When learning AI/ML a lot of us use ipynb files to code and upload them on GitHub for future references. The problem is that GitHub's backend that renders these notebooks is horrible. Sometimes it takes 3-4 tries to load the notebooks, sometimes not even 25+ tries make it work and rarely it will work on the first try. There are two popular solutions to this -
+
+    1. If the repo is public then do this -
+        1. Open this link - <https://nbviewer.jupyter.org/>
+        2. Paste your notebook's link there.
+    2. If the repo is private then make a colab badge by -
+        1. Add this in some readme -
+
+                [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[your username]/[repository name]/blob/master[or the branch it is on]/[name of your ipynb file])
+
+        2. Fill in the appropriate places in the above code and save the readme file. Run the notebook on colab by clicking on the colab badge and authorize the notebook usage through GitHub
 
 ## Random Tips
 
 - When working with multiple environments in the same system (python specific):
-    - Make sure you have disabled the other environments to avoid package version clashes
-    - If there are still clashes then try to use commands that specify the environment or directory
-        - For example, for installing packages to the environment you are currently in and not affecting anything outside you can use something like
-            ```sh
-                python -m pip ...
-            ```
-        - Or when working with Anaconda or Virtual Env if you cannot import packages from that venv then you can try something like
-            ```sh
-                <path-to-venv>/bin/python [what you want to execute]
-            ```
+  - Make sure you have disabled the other environments to avoid package version clashes
+  - If there are still clashes then try to use commands that specify the environment or directory
+    - For example, for installing packages to the environment you are currently in and not affecting anything outside you can use something like
+        ```sh
+            python -m pip ...
+        ```
+    - Or when working with Anaconda or Virtual Env if you cannot import packages from that venv then you can try something like
+        ```sh
+            <path-to-venv>/bin/python [what you want to execute]
+        ```
 
 ### Suspiciously Specific :thinking:
 
